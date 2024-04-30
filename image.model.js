@@ -11,4 +11,4 @@ const ImageSchema = mongoose.Schema({
     }
 })
 
-module.exports = ImageModel = mongoose.model('imageModel',ImageSchema)
+module.exports = ImageModel2 = mongoose.model('imageModel',ImageSchema)
