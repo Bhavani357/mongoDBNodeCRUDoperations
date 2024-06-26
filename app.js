@@ -35,9 +35,9 @@ app.post('/upload', (req, res) => {
             // Creating a new ImageModel instance with uploaded image data
             const newImage = new ImageModel({
                 name: req.body.name,
-                image: {
+                imagefile: {
                     data: req.file.filename, // Storing uploaded image filename
-                    contentType: 'image/png' // Specifying content type
+                    contentType: req.file.mimetype // Specifying content type
                 }
             });
             // Saving the new image data to the database
